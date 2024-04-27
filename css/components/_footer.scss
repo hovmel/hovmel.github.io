@@ -1,0 +1,44 @@
+.footer {
+  padding: 100px 0;
+
+  .footer_row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .footer_logo {
+    width: 170px;
+  }
+
+  .contact_block {
+    width: 284px;
+  }
+
+  .contact_title {
+    color: $dark-gray-color;
+    font-size: 16px;
+    font-family: $font-regular;
+    margin-bottom: 4px;
+  }
+
+  .contact_item {
+    font-size: 20px;
+    font-family: $font-regular;
+    margin-top: 7px;
+  }
+
+  .line {
+    width: 100%;
+    height: 1px;
+    background-color: $gray-color;
+    margin-top: 47px;
+    margin-bottom: 61px;
+  }
+
+  .caption_text {
+    color: $dark-gray-color;
+    font-size: 12px;
+    font-family: $font-regular;
+  }
+}

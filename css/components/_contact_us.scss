@@ -1,0 +1,133 @@
+.contact_us {
+  padding: 100px 0;
+  background-color: $dark-color;
+  border-radius: 15px;
+
+  & .section_title {
+    color: white;
+  }
+
+  .form_inner {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .form_left {
+    width: 284px;
+  }
+
+  .form_arrow {
+    width: 18px;
+    margin-bottom: -4px;
+  }
+
+  .form_text {
+    color: white;
+    font-size: 16px;
+    font-family: $font-regular;
+
+    label {
+      color: $blue-color;
+      cursor: pointer;
+      text-decoration: underline;
+      transition: opacity .2s;
+
+      &:active {
+        opacity: 0.7;
+      }
+    }
+  }
+
+  .telegram_btn {
+    margin-top: 30px;
+    display: flex;
+    background-color: white;
+    width: 284px;
+    height: 75px;
+    border-radius: 38px;
+    align-items: center;
+    padding: 10px;
+    cursor: pointer;
+    transition: opacity .2s;
+
+    &:hover {
+      & .tg_logo_div {
+        background-color: darken($blue-color, 10);
+      }
+    }
+    &:active {
+      opacity: 0.7;
+    }
+
+    .tg_logo_div {
+      background-color: $dark-color;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 78px;
+      height: 55px;
+      border-radius: 28px;
+      margin-right: 20px;
+      transition: background-color .2s;
+
+      & img {
+        width: 28px;
+        filter: brightness(0) invert(1);
+      }
+    }
+
+    & span {
+      font-size: 20px;
+      font-family: $font-regular;
+    }
+  }
+
+  .form_right {
+    width: 919px;
+    background-color: $gray-color;
+    border-radius: 20px;
+    padding: 20px;
+  }
+
+  .inputs_row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+
+    & input {
+      width: calc(50% - 10px);
+    }
+  }
+
+  textarea {
+    height: 248px;
+  }
+
+  .inputs_description {
+    margin-top: 10px;
+    font-size: 12px;
+    color: $dark-gray-color;
+    font-family: $font-regular;
+  }
+
+  .submit_btn {
+    background-color: $dark-color;
+    border-radius: 15px;
+    color: white;
+    padding: 20px 50px;
+    width: 100%;
+    margin-top: 20px;
+    text-align: center;
+    cursor: pointer;
+    transition: background-color .2s, opacity .2s;
+
+    &:hover {
+      background-color: $dark-gray-color;
+    }
+
+    &:active {
+      opacity: 0.7;
+    }
+  }
+}

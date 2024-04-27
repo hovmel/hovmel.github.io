@@ -1,0 +1,81 @@
+.banner {
+  height: 837px;
+  background-color: $dark-color;
+  border-radius: 15px;
+  margin-top: 120px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+
+  .slogan_div {
+    position: absolute;
+    top: 254px;
+    z-index: 95;
+    text-align: center;
+    animation: slogan_appear;
+    animation-duration: 1000ms;
+
+    .slogan {
+      font-size: 100px;
+      text-transform: uppercase;
+      color: white;
+
+      span {
+        color: $blue-color;
+        font-size: 100px;
+      }
+    }
+  }
+
+  .small_logo {
+    position: absolute;
+    top: 500px;
+    z-index: 95;
+    opacity: 0;
+    transition: opacity .8s;
+
+     & img {
+       width: 175px;
+       filter: brightness(0) invert(1);
+     }
+
+    &.visible {
+      opacity: 1;
+    }
+  }
+
+  .send_request {
+    position: absolute;
+    top: 560px;
+    z-index: 95;
+    font-size: 18px;
+    padding: 20px 50px;
+    background-color: $blue-color;
+    border-radius: 15px;
+    cursor: pointer;
+    opacity: 0;
+    transition: opacity .8s, background-color .2s;
+
+    &.visible {
+      opacity: 1;
+    }
+
+    &:hover {
+      background-color: white;
+    }
+
+    &:active {
+      background-color: rgba(255, 255, 255, 0.72);
+    }
+  }
+
+}
+
+canvas {
+  position: absolute;
+  z-index: 90;
+  top: -120px;
+  left: -30px;
+}
