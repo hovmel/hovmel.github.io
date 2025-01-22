@@ -34,7 +34,7 @@ const path = require('path');
 
         // Save the HTML and CSS files locally if needed
         const fs = require('fs');
-        fs.writeFileSync(path.join(__dirname, 'website.html'), html);
+        fs.writeFileSync(path.join(__dirname, 'index.html'), html);
         for (const [link, css] of Object.entries(cssFiles)) {
             const filename = path.basename(new URL(link).pathname);
             fs.writeFileSync(path.join(__dirname, filename), css);
