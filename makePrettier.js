@@ -4,7 +4,7 @@ const prettier = require("prettier");
 (async () => {
     try {
         // Path to your file
-        const filePath = "./website.html";
+        const filePath = "./index.html";
 
         const removeScriptTags = (htmlContent) => {
             return htmlContent.replace(/<script[\s\S]*?<\/script>/gi, '');
